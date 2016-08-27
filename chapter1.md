@@ -1,1 +1,15 @@
-# First Chapter
+# Nginx配置
+
+### 研究Nginx前的准备
+
+**Nginx是什么和一些概念**
+
+Web服务器:基于REST架构风格,以统一资源描述符或统一资源定位符作为沟通依据,通过HTTP为浏览器等客户端程序提供各种网络服务.
+
+* Apache:发展时间长,重量级,但不支持高并发.
+* Nginx:轻量级,高性能Web服务器,国内公司用的比较多
+* Lighttpd:轻量级,高性能Web服务器,欧美开发者较青睐
+* Tomcat:面向Java,重量级Web服务器
+* Jetty:面向Java,重量级Web服务器
+* IIS:只能在Windows操作系统上运行
+
