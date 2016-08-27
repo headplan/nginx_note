@@ -16,6 +16,7 @@ Web服务器:基于REST架构风格,以统一资源描述符或统一资源定�
 * Tomcat:面向Java,重量级Web服务器
 
 * Jetty:面向Java,重量级Web服务器
+
 * IIS:只能在Windows操作系统上运行
 
 Nginx是一个跨平台的Web服务器,可以运行在不同的操作系统上,并且还可以使用当前操作系统的特有API来提高自己的性能.
@@ -45,25 +46,28 @@ yum install -y gcc : 编译C语言程序,Nginx不会直接提供二进制可执�
 
 yum install -y gcc-c++ : 编写Nginx HTTP模块时会用到.
 
-yum install -y pcre pcre-devel : 
+yum install -y pcre pcre-devel :
 
-yum install -y zlib zlib-devel : 
+yum install -y zlib zlib-devel :
 
-yum install -y openssl openssl-devel : 
+yum install -y openssl openssl-devel :
 
 **磁盘目录**
 
+* 源代码存放目录 - 该目录用于存放源码和第三方或我们自己写的模块源码文件
 
+* 编译阶段产生的中间文件存放目录 - 存放configure命令执行后所生成的源文件及目录,还有make命令执行后生成的目标文件和最终连接成功的二进制文件.默认情况下configure命令会将目录命名为objs,放在源代码目录下.
 
+* 部署目录 - 该目录存放服务运行期间所需要的二进制文件,配置文件等,默认在\/usr\/local\/nginx
+
+* 日志文件存放目录 - 日志文件通常会比较大,研究底层架构时候,会打开debug级别的日志,非常详细,日志文件会很大.
 
 
 **Linux内核参数的优化**
 
+默认的Linux系统考虑的是最普通的通用场景.需要修改之后,使得Nginx可以拥有更高的性能.
+
+在内核优化时,Nginx作为静态Web内容服务器,反向代理服务器或是提供图片缩略图功能\(实时压缩图片\)的服务器时,内核参数的调整都是不同的,有针对性的.下面是最通用的使Nginx支持更多并发请求的TCP网络参数做简单说明.
 
 
-
-
-
-
- 
 
