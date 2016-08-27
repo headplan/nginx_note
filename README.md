@@ -1,3 +1,6 @@
-# My Awesome Book
+# 简介
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+## 内容来源
+
+* 纸质书&lt;深入理解Nginx&gt; - 目前只看前面几章,了解各个模块的配置
+
