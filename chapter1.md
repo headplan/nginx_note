@@ -14,11 +14,56 @@ Web服务器:基于REST架构风格,以统一资源描述符或统一资源定�
 * Lighttpd:轻量级,高性能Web服务器,欧美开发者较青睐
 
 * Tomcat:面向Java,重量级Web服务器
+
 * Jetty:面向Java,重量级Web服务器
 * IIS:只能在Windows操作系统上运行
 
 Nginx是一个跨平台的Web服务器,可以运行在不同的操作系统上,并且还可以使用当前操作系统的特有API来提高自己的性能.
-例如使用Linux上的epoll来处理大并发网络连接.
+例如,使用Linux上的epoll来处理大并发网络连接.又如,对于Linux,Nginx支持其独有的sendfile系统调用,这个系统调用可以高效的把硬盘中的数据发送到网络上,而不需要先把硬盘数据复制到用户内存上再发送.
+
+**为什么选择Nginx**
+
+* 更快
+* 高扩展性
+* 高可靠性
+* 低内存消耗
+* 单机支持10万以上的并发连接
+* 热部署
+* 最自由的BSD许可协议
+
+### 准备工作
+
+**Linux操作系统**
+
+内核需要在2.6以上,只有2.6以上才支持epoll.
+
+使用`uname -a`查看Linux内核的版本.
+
+**使用Nginx的必备软件**
+
+yum install -y gcc : 编译C语言程序,Nginx不会直接提供二进制可执行程序.
+
+yum install -y gcc-c++ : 编写Nginx HTTP模块时会用到.
+
+yum install -y pcre pcre-devel : 
+
+yum install -y zlib zlib-devel : 
+
+yum install -y openssl openssl-devel : 
+
+**磁盘目录**
 
 
+
+
+
+**Linux内核参数的优化**
+
+
+
+
+
+
+
+ 
 
