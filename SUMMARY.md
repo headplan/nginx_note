@@ -1,5 +1,5 @@
 # Summary
 
 * [简介](README.md)
-* [First Chapter](chapter1.md)
+* [Nginx配置](chapter1.md)
 
