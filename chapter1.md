@@ -47,11 +47,11 @@ yum install -y gcc : 编译C语言程序,Nginx不会直接提供二进制可执�
 
 yum install -y gcc-c++ : 编写Nginx HTTP模块时会用到.
 
-yum install -y pcre pcre-devel :
+yum install -y pcre pcre-devel : pcre是正则表达式库,pcre-devel是二次开发时用的开发库\(nginx.conf配置文件里会用正则\)
 
-yum install -y zlib zlib-devel :
+yum install -y zlib zlib-devel : 对HTTP包的内容做gzip格式的压缩\(nginx.conf配置文件里可以开启gzip on\)
 
-yum install -y openssl openssl-devel :
+yum install -y openssl openssl-devel : 应用SSL协议传输HTTP得安装,要用MD5,SHA1等散列函数也得安装.
 
 **磁盘目录**
 
@@ -70,13 +70,44 @@ yum install -y openssl openssl-devel :
 
 在内核优化时,Nginx作为静态Web内容服务器,反向代理服务器或是提供图片缩略图功能\(实时压缩图片\)的服务器时,内核参数的调整都是不同的,有针对性的.下面是最通用的使Nginx支持更多并发请求的TCP网络参数做简单说明.
 
-修改`/etc/sysctl.conf`来更改内核参数,然后使用`sysctl -p`命令生效,最常用的配置:
+修改`/etc/sysctl.conf`来更改内核参数,然后使用`sysctl -p`命令生效,最常用的配置 : 
 
-| 配置 | 含义 |
-| --- | --- |
-| fs.file-max = 999999 |  |
+fs.file-max = 999999 \# 
 
+**Nginx源码下载**
 
+下载地址:http:\/\/nginx.org\/en\/download.html
 
+tar -zxvf nginx-xxxx.tar.gz
 
+**编译安装Nginx**
+
+.\/configure - 检测操作系统内核和已经安装的软件,参数的解析,中间目录的生成以及根据各种参数生成一些C源码文件,Makefile文件等
+
+make - 根据上一步生成的Makefile文件编译Nginx工程,并生成目标文件和最终的二进制文件.
+
+make install - 根据第一步执行时的参数将Nginx部署到指定的安装目录,包括目录的建立和二进制文件,配置文件的复制
+
+最后可以make clean和make distclean清楚前面生成的东西.
+
+**configure详解**
+
+**Nginx的命令行控制**
+
+最简单的`whereis nginx`命令,查看nginx的安装路径,执行文件\(二进制程序\)路径,配置文件路径和模块路径.
+
+`echo $PATH`查看全局变量,如果设置了,就可以直接使用ngxin执行二进制程序.
+
+1.默认方式启动
+直接执行nginx文件.这时会执行configure设置的--conf-path=PATH指定的nginx.conf配置文件.
+
+2.自定义指定配置文件启动
+
+nginx -c \/tmp\/nginx.conf
+
+启动时加载指定的配置文件.
+
+3.另行指定安装目录的启动方式
+
+nginx -p \/usr\/local\/nginx\/
 
