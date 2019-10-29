@@ -13,5 +13,7 @@
     * [反向代理](chapter1/locationpei-zhi/fan-xiang-dai-li.md)
       * [Nginx正向代理](chapter1/locationpei-zhi/fan-xiang-dai-li/nginxzheng-xiang-dai-li.md)
       * [Nginx反向代理](chapter1/locationpei-zhi/fan-xiang-dai-li/nginxfan-xiang-dai-li.md)
+    * [常用location配置](chapter1/locationpei-zhi/chang-yong-location-pei-zhi.md)
+    * [常用Rewrite规则](chapter1/locationpei-zhi/chang-yong-rewrite-gui-ze.md)
 * [Nginx日志分析](nginxri-zhi-fen-xi.md)
 
