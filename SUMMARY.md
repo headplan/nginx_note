@@ -16,5 +16,6 @@
     * [常用location配置](chapter1/locationpei-zhi/chang-yong-location-pei-zhi.md)
     * [常用Rewrite规则](chapter1/locationpei-zhi/chang-yong-rewrite-gui-ze.md)
     * [https配置](chapter1/locationpei-zhi/httpspei-zhi.md)
+  * [配置用例](chapter1/pei-zhi-yong-li.md)
 * [Nginx日志分析](nginxri-zhi-fen-xi.md)
 
