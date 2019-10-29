@@ -10,5 +10,8 @@
   * [location配置](chapter1/locationpei-zhi.md)
     * [try\_files](chapter1/locationpei-zhi/tryfiles.md)
     * [Rewrite语法参考](chapter1/locationpei-zhi/rewriteyu-fa-can-kao.md)
+    * [反向代理](chapter1/locationpei-zhi/fan-xiang-dai-li.md)
+      * [Nginx正向代理](chapter1/locationpei-zhi/fan-xiang-dai-li/nginxzheng-xiang-dai-li.md)
+      * [Nginx反向代理](chapter1/locationpei-zhi/fan-xiang-dai-li/nginxfan-xiang-dai-li.md)
 * [Nginx日志分析](nginxri-zhi-fen-xi.md)
 
