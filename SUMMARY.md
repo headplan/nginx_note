@@ -9,5 +9,6 @@
   * [server虚拟主机配置](chapter1/serverxu-ni-zhu-ji-pei-zhi.md)
   * [location配置](chapter1/locationpei-zhi.md)
     * [try\_files](chapter1/locationpei-zhi/tryfiles.md)
+    * [Rewrite语法参考](chapter1/locationpei-zhi/rewriteyu-fa-can-kao.md)
 * [Nginx日志分析](nginxri-zhi-fen-xi.md)
 
