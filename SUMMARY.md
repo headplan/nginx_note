@@ -2,6 +2,21 @@
 
 * [简介](README.md)
 * [初识Nginx](chu-shi-nginx.md)
+  * Nginx适用场景
+  * 历史背景
+  * 5个主要优点
+  * 4个主要组成
+  * 版本发布历史及选择
+  * 编译Nginx
+  * 配置文件语法
+  * Nginx命令行
+    * 重载
+    * 热部署
+    * 日志切割
+  * 搭建静态资源Web服务器
+  * 搭建具备缓存功能的反向代理服务
+  * 用GoAccess实时监控access日志
+  * OpenResty简单搭建
 * [Nginx配置](chapter1.md)
   * [常用配置](chapter1/chang-yong-pei-zhi.md)
   * [fastcgi模块](chapter1/fastcgimo-kuai.md)
