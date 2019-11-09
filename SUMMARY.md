@@ -2,21 +2,22 @@
 
 * [简介](README.md)
 * [初识Nginx](chu-shi-nginx.md)
-  * Nginx适用场景
-  * 历史背景
-  * 5个主要优点
-  * 4个主要组成
-  * 版本发布历史及选择
-  * 编译Nginx
-  * 配置文件语法
-  * Nginx命令行
-    * 重载
-    * 热部署
-    * 日志切割
-  * 搭建静态资源Web服务器
-  * 搭建具备缓存功能的反向代理服务
-  * 用GoAccess实时监控access日志
-  * OpenResty简单搭建
+  * [Nginx适用场景](chu-shi-nginx/nginxshi-yong-chang-jing.md)
+  * [历史背景](chu-shi-nginx/li-shi-bei-jing.md)
+  * [5个主要优点](chu-shi-nginx/5ge-zhu-yao-you-dian.md)
+  * [4个主要组成](chu-shi-nginx/4ge-zhu-yao-zu-cheng.md)
+  * [版本发布历史及选择](chu-shi-nginx/ban-ben-fa-bu-li-shi-ji-xuan-ze.md)
+  * [编译Nginx](chu-shi-nginx/bian-yi-nginx.md)
+  * [配置文件语法](chu-shi-nginx/pei-zhi-wen-jian-yu-fa.md)
+    * [常用配置](chu-shi-nginx/chang-yong-pei-zhi.md)
+  * [Nginx命令行](chu-shi-nginx/nginxming-ling-xing.md)
+    * [重载](chu-shi-nginx/nginxming-ling-xing/zhong-zai.md)
+    * [热部署](chu-shi-nginx/nginxming-ling-xing/re-bu-shu.md)
+    * [日志切割](chu-shi-nginx/nginxming-ling-xing/ri-zhi-qie-ge.md)
+  * [搭建静态资源Web服务器](chu-shi-nginx/da-jian-jing-tai-zi-yuan-web-fu-wu-qi.md)
+  * [搭建具备缓存功能的反向代理服务](chu-shi-nginx/da-jian-ju-bei-huan-cun-gong-neng-de-fan-xiang-dai-li-fu-wu.md)
+  * [用GoAccess实时监控access日志](chu-shi-nginx/yong-goaccess-shi-shi-jian-kong-access-ri-zhi.md)
+  * [OpenResty简单搭建](chu-shi-nginx/openrestyjian-dan-da-jian.md)
 * [Nginx配置](chapter1.md)
   * [常用配置](chapter1/chang-yong-pei-zhi.md)
   * [fastcgi模块](chapter1/fastcgimo-kuai.md)
@@ -33,5 +34,9 @@
     * [https配置](chapter1/locationpei-zhi/httpspei-zhi.md)
   * [配置用例](chapter1/pei-zhi-yong-li.md)
   * [配置负载均衡的方案](chapter1/pei-zhi-fu-zai-jun-heng-de-fang-an.md)
-* [Nginx日志分析](nginxri-zhi-fen-xi.md)
+* [Nginx架构基础](nginxjia-gou-ji-chu.md)
+* 详解HTTP模块
+* 反向代理与负载均衡
+* [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
+* [Nginx与OpenResty](nginxyu-openresty.md)
 
