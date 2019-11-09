@@ -35,8 +35,8 @@
   * [配置用例](chapter1/pei-zhi-yong-li.md)
   * [配置负载均衡的方案](chapter1/pei-zhi-fu-zai-jun-heng-de-fang-an.md)
 * [Nginx架构基础](nginxjia-gou-ji-chu.md)
-* 详解HTTP模块
-* 反向代理与负载均衡
+* [详解HTTP模块](xiang-jie-http-mo-kuai.md)
+* [反向代理与负载均衡](fan-xiang-dai-li-yu-fu-zai-jun-heng.md)
 * [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
 * [Nginx与OpenResty](nginxyu-openresty.md)
 
