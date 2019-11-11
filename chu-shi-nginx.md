@@ -20,7 +20,7 @@ Linxu下的高并发软件Squid , Memcached采用的也都是epoll网络I/O模�
 
 ---
 
-Apache和Nginx的区别 , 或者说select模型和epoll模型的区别 .
+#### Apache和Nginx的区别 , 或者说select模型和epoll模型的区别 .
 
 例如 , 在菜馆中服务员接待客人 , 看成是一次请求 .
 
@@ -42,22 +42,6 @@ epoll模型服务员 : 客人进门 , 门口的感应器告知服务员 , 服务
 **主进程和工作进程的工作流程**
 
 ![](/assets/gongzuoliucheng.png)
-
-#### Nginx的三个主要应用场景
-
-**静态资源服务**
-
-* 通过本地文件系统提供服务
-
-**反向代理服务**
-
-* 性能强大
-* 缓存
-* 负载均衡
-
-**API服务**
-
-* OpenResty
 
 #### Nginx的优点
 
