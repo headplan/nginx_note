@@ -108,5 +108,13 @@ contrib
         └── nginx.vim
 ```
 
+**html目录**
+
+```
+./html
+├── 50x.html - 50x错误页面
+└── index.html - 欢迎页面
+```
+
 
 
