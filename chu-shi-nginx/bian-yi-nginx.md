@@ -299,29 +299,29 @@ extern ngx_module_t  ngx_http_not_modified_filter_module;
 
 ```
 ./
-├── conf/ - 配置文件
-│   ├── fastcgi.conf
-│   ├── fastcgi.conf.default
-│   ├── fastcgi_params
-│   ├── fastcgi_params.default
-│   ├── koi-utf
-│   ├── koi-win
-│   ├── mime.types
-│   ├── mime.types.default
-│   ├── nginx.conf
-│   ├── nginx.conf.default
-│   ├── scgi_params
-│   ├── scgi_params.default
-│   ├── uwsgi_params
-│   ├── uwsgi_params.default
-│   └── win-utf
+├── conf/ - 配置文件.即是从源码包中拷贝过来的
+│   ├── fastcgi.conf
+│   ├── fastcgi.conf.default
+│   ├── fastcgi_params
+│   ├── fastcgi_params.default
+│   ├── koi-utf
+│   ├── koi-win
+│   ├── mime.types
+│   ├── mime.types.default
+│   ├── nginx.conf
+│   ├── nginx.conf.default
+│   ├── scgi_params
+│   ├── scgi_params.default
+│   ├── uwsgi_params
+│   ├── uwsgi_params.default
+│   └── win-utf
 ├── html/
-│   ├── 50x.html
-│   └── index.html
-├── logs/
-│   ├── access.log
-│   ├── error.log
-│   └── nginx.pid
+│   ├── 50x.html
+│   └── index.html
+├── logs/ - 日志文件
+│   ├── access.log
+│   ├── error.log
+│   └── nginx.pid
 └── sbin/ - nginx二进制文件
     └── nginx*
 ```
