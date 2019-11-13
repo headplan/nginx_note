@@ -83,7 +83,32 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 
 **configure脚本**
 
-是一个用来生成中间文件 , 执行编译前的必备动作 . 
+是一个用来生成中间文件 , 执行编译前的必备动作 .
+
+**contrib目录**
+
+提供了两个perl脚本 , 和vim的配置 . 
+
+```
+contrib
+├── README
+├── geo2nginx.pl
+├── unicode2nginx
+│   ├── koi-utf
+│   ├── unicode-to-nginx.pl
+│   └── win-utf
+└── vim
+    ├── ftdetect
+    │   └── nginx.vim
+    ├── ftplugin
+    │   └── nginx.vim
+    ├── indent
+    │   └── nginx.vim
+    └── syntax
+        └── nginx.vim
+```
+
+
 
 
 
