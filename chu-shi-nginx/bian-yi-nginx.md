@@ -170,5 +170,17 @@ man ./man/nginx.8
 --without-poll_module              disable poll module
 ```
 
+**还有一些特殊的参数**
+
+```
+--with-cc=PATH                     set C compiler pathname
+--with-cpp=PATH                    set C preprocessor pathname
+--with-cc-opt=OPTIONS              set additional C compiler options
+--with-ld-opt=OPTIONS              set additional linker options
+--with-cpu-opt=CPU                 build for the specified CPU, valid values:
+                                   pentium, pentiumpro, pentium3, pentium4,
+                                   athlon, opteron, sparc32, sparc64, ppc64
+```
+
 
 
