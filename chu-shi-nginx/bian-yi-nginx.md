@@ -206,7 +206,7 @@ nginx http uwsgi temporary files: "uwsgi_temp"
 nginx http scgi temporary files: "scgi_temp"
 ```
 
-在./configure完成之后 , 会生成一些中间文件 , 在objs目录下 . 
+在./configure完成之后 , 会生成一些中间文件 , 在objs目录下 .
 
 ```
 ./objs
@@ -220,7 +220,7 @@ nginx http scgi temporary files: "scgi_temp"
 
 这里最重要的是ngx\_modules.c文件 , 它决定了接下来执行编译时 , 有哪些模块 , 会被编译进Nginx .
 
-```c
+```cpp
 extern ngx_module_t  ngx_core_module;
 extern ngx_module_t  ngx_errlog_module;
 extern ngx_module_t  ngx_conf_module;
