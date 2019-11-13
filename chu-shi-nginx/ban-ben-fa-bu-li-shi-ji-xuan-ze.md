@@ -6,7 +6,11 @@
 
 Nginx官网 : [http://nginx.org/en/download.html](http://nginx.org/en/download.html)
 
-版本分为Mainline version , Stable version , Legacy versions . 
+#### 版本说明
 
+Mainline version\(主干版本\) , 也是奇数版本 , 会增加新的功能 , 但不一定稳定 . 
 
+Stable version\(稳定版本\) , 偶数版本则相对稳定 . 
+
+Legacy versions , 历史版本 . 
 
