@@ -149,7 +149,7 @@ man ./man/nginx.8
 
 **设置文件 , 模块路径**
 
-默认指定--prefix参数即可 . 
+默认指定--prefix参数即可 .
 
 ```
 --prefix=PATH                      set installation prefix
@@ -159,6 +159,15 @@ man ./man/nginx.8
 --error-log-path=PATH              set error log pathname
 --pid-path=PATH                    set nginx.pid pathname
 --lock-path=PATH                   set nginx.lock pathname
+```
+
+**确定使用和不使用哪些模块**
+
+```
+--with-select_module               enable select module
+--without-select_module            disable select module
+--with-poll_module                 enable poll module
+--without-poll_module              disable poll module
 ```
 
 
