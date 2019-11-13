@@ -33,9 +33,13 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 └── src/
 ```
 
+**auto目录**
+
+除了标注的目录 , 其他文件及目录都是为了辅助configure脚本执行时 , 去判断nginx支持哪些模块 , 当前的操作系统有什么样的特性可以给Nginx使用 . 
+
 ```
 ├── auto/
-│   ├── cc/
+│   ├── cc/ - 用于编译的
 │   ├── define
 │   ├── endianness
 │   ├── feature
@@ -45,13 +49,13 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 │   ├── include
 │   ├── init
 │   ├── install
-│   ├── lib/
+│   ├── lib/ - lib库
 │   ├── make
 │   ├── module
 │   ├── modules
 │   ├── nohave
 │   ├── options
-│   ├── os/
+│   ├── os/ - 对所有操作系统的判断
 │   ├── sources
 │   ├── stubs
 │   ├── summary
@@ -59,6 +63,10 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 │   ├── types/
 │   └── unix
 ```
+
+**conf目录**
+
+
 
 
 
