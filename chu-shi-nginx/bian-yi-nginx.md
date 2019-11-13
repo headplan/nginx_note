@@ -182,5 +182,11 @@ man ./man/nginx.8
                                    athlon, opteron, sparc32, sparc64, ppc64
 ```
 
+**开始编译**
+
+```
+./configure --prefix=/Users/mynginx
+```
+
 
 
