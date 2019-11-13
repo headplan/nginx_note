@@ -116,5 +116,28 @@ contrib
 └── index.html - 欢迎页面
 ```
 
+**man目录**
+
+Linux对nginx的帮助文件 . 
+
+```
+man ./man/nginx.8
+```
+
+**src目录**
+
+源代码目录 . 
+
+```
+./src
+├── core/
+├── event/
+├── http/
+├── mail/
+├── misc/
+├── os/
+└── stream/
+```
+
 
 
