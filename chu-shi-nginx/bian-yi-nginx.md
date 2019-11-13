@@ -220,7 +220,7 @@ nginx http scgi temporary files: "scgi_temp"
 
 这里最重要的是ngx\_modules.c文件 , 它决定了接下来执行编译时 , 有哪些模块 , 会被编译进Nginx .
 
-```cpp
+```c
 extern ngx_module_t  ngx_core_module;
 extern ngx_module_t  ngx_errlog_module;
 extern ngx_module_t  ngx_conf_module;
