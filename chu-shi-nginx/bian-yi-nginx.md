@@ -20,10 +20,10 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 
 ```
 ./nginx-1.16.1
-├── CHANGES - 每个Nginx版本提供的特性feature和bugfix
+├── CHANGES - 每个Nginx版本提供的特性feature,change和bugfix
 ├── CHANGES.ru - 俄语版
-├── LICENSE - 
-├── README
+├── LICENSE - 软件许可证
+├── README - Readme文件
 ├── auto/
 ├── conf/
 ├── configure*
@@ -33,33 +33,31 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 └── src/
 ```
 
-
-
 ```
 ├── auto/
-│   ├── cc/
-│   ├── define
-│   ├── endianness
-│   ├── feature
-│   ├── have
-│   ├── have_headers
-│   ├── headers
-│   ├── include
-│   ├── init
-│   ├── install
-│   ├── lib/
-│   ├── make
-│   ├── module
-│   ├── modules
-│   ├── nohave
-│   ├── options
-│   ├── os/
-│   ├── sources
-│   ├── stubs
-│   ├── summary
-│   ├── threads
-│   ├── types/
-│   └── unix
+│   ├── cc/
+│   ├── define
+│   ├── endianness
+│   ├── feature
+│   ├── have
+│   ├── have_headers
+│   ├── headers
+│   ├── include
+│   ├── init
+│   ├── install
+│   ├── lib/
+│   ├── make
+│   ├── module
+│   ├── modules
+│   ├── nohave
+│   ├── options
+│   ├── os/
+│   ├── sources
+│   ├── stubs
+│   ├── summary
+│   ├── threads
+│   ├── types/
+│   └── unix
 ```
 
 
