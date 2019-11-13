@@ -4,5 +4,9 @@
 
 ![](/assets/banbenfabuqingkuang.png)
 
+Nginx官网 : [http://nginx.org/en/download.html](http://nginx.org/en/download.html)
+
+版本分为Mainline version , Stable version , Legacy versions . 
+
 
 
