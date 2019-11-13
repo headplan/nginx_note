@@ -118,7 +118,7 @@ contrib
 
 **man目录**
 
-Linux对nginx的帮助文件 . 
+Linux对nginx的帮助文件 .
 
 ```
 man ./man/nginx.8
@@ -126,7 +126,7 @@ man ./man/nginx.8
 
 **src目录**
 
-源代码目录 . 
+源代码目录 .
 
 ```
 ./src
@@ -137,6 +137,28 @@ man ./man/nginx.8
 ├── misc/
 ├── os/
 └── stream/
+```
+
+#### 开始编译
+
+**查看编译参数**
+
+```
+./configure --help | more
+```
+
+**设置文件 , 模块路径**
+
+默认指定--prefix参数即可 . 
+
+```
+--prefix=PATH                      set installation prefix
+--sbin-path=PATH                   set nginx binary pathname
+--modules-path=PATH                set modules path
+--conf-path=PATH                   set nginx.conf pathname
+--error-log-path=PATH              set error log pathname
+--pid-path=PATH                    set nginx.pid pathname
+--lock-path=PATH                   set nginx.lock pathname
 ```
 
 
