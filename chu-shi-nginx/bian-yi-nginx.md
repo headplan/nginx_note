@@ -188,5 +188,91 @@ man ./man/nginx.8
 ./configure --prefix=/Users/mynginx
 ```
 
+如果没有报错 , 说明Nginx已经编译成功了 . 现在所有nginx的配置 , 以及运行时的目录都会列出来
+
+```
+nginx path prefix: "/Users/mynginx"
+nginx binary file: "/Users/mynginx/sbin/nginx"
+nginx modules path: "/Users/mynginx/modules"
+nginx configuration prefix: "/Users/mynginx/conf"
+nginx configuration file: "/Users/mynginx/conf/nginx.conf"
+nginx pid file: "/Users/mynginx/logs/nginx.pid"
+nginx error log file: "/Users/mynginx/logs/error.log"
+nginx http access log file: "/Users/mynginx/logs/access.log"
+nginx http client request body temporary files: "client_body_temp"
+nginx http proxy temporary files: "proxy_temp"
+nginx http fastcgi temporary files: "fastcgi_temp"
+nginx http uwsgi temporary files: "uwsgi_temp"
+nginx http scgi temporary files: "scgi_temp"
+```
+
+在./configure完成之后 , 会生成一些中间文件 , 在objs目录下 . 
+
+```
+./objs
+├── Makefile
+├── autoconf.err
+├── ngx_auto_config.h
+├── ngx_auto_headers.h
+├── ngx_modules.c
+└── src/
+```
+
+这里最重要的是ngx\_modules.c文件 , 它决定了接下来执行编译时 , 有哪些模块 , 会被编译进Nginx .
+
+```c
+extern ngx_module_t  ngx_core_module;
+extern ngx_module_t  ngx_errlog_module;
+extern ngx_module_t  ngx_conf_module;
+extern ngx_module_t  ngx_regex_module;
+extern ngx_module_t  ngx_events_module;
+extern ngx_module_t  ngx_event_core_module;
+extern ngx_module_t  ngx_kqueue_module;
+extern ngx_module_t  ngx_http_module;
+extern ngx_module_t  ngx_http_core_module;
+extern ngx_module_t  ngx_http_log_module;
+extern ngx_module_t  ngx_http_upstream_module;
+extern ngx_module_t  ngx_http_static_module;
+extern ngx_module_t  ngx_http_autoindex_module;
+extern ngx_module_t  ngx_http_index_module;
+extern ngx_module_t  ngx_http_mirror_module;
+extern ngx_module_t  ngx_http_try_files_module;
+extern ngx_module_t  ngx_http_auth_basic_module;
+extern ngx_module_t  ngx_http_access_module;
+extern ngx_module_t  ngx_http_limit_conn_module;
+extern ngx_module_t  ngx_http_limit_req_module;
+extern ngx_module_t  ngx_http_geo_module;
+extern ngx_module_t  ngx_http_map_module;
+extern ngx_module_t  ngx_http_split_clients_module;
+extern ngx_module_t  ngx_http_referer_module;
+extern ngx_module_t  ngx_http_rewrite_module;
+extern ngx_module_t  ngx_http_proxy_module;
+extern ngx_module_t  ngx_http_fastcgi_module;
+extern ngx_module_t  ngx_http_uwsgi_module;
+extern ngx_module_t  ngx_http_scgi_module;
+extern ngx_module_t  ngx_http_memcached_module;
+extern ngx_module_t  ngx_http_empty_gif_module;
+extern ngx_module_t  ngx_http_browser_module;
+extern ngx_module_t  ngx_http_upstream_hash_module;
+extern ngx_module_t  ngx_http_upstream_ip_hash_module;
+extern ngx_module_t  ngx_http_upstream_least_conn_module;
+extern ngx_module_t  ngx_http_upstream_random_module;
+extern ngx_module_t  ngx_http_upstream_keepalive_module;
+extern ngx_module_t  ngx_http_upstream_zone_module;
+extern ngx_module_t  ngx_http_write_filter_module;
+extern ngx_module_t  ngx_http_header_filter_module;
+extern ngx_module_t  ngx_http_chunked_filter_module;
+extern ngx_module_t  ngx_http_range_header_filter_module;
+extern ngx_module_t  ngx_http_gzip_filter_module;
+extern ngx_module_t  ngx_http_postpone_filter_module;
+extern ngx_module_t  ngx_http_ssi_filter_module;
+extern ngx_module_t  ngx_http_charset_filter_module;
+extern ngx_module_t  ngx_http_userid_filter_module;
+extern ngx_module_t  ngx_http_headers_filter_module;
+extern ngx_module_t  ngx_http_copy_filter_module;
+extern ngx_module_t  ngx_http_range_body_filter_module;
+extern ngx_module_t  ngx_http_not_modified_filter_module;
+```
+
 
 
