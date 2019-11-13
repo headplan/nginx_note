@@ -278,7 +278,7 @@ extern ngx_module_t  ngx_http_not_modified_filter_module;
 
 #### make编译
 
-编译完成以后 , 如果没有任何错误 , 这个时候可以看到生成了大量的中间文件 , 已经最终的运行的nginx二进制文件 , 可以在objs目录看到 . 
+编译完成以后 , 如果没有任何错误 , 这个时候可以看到生成了大量的中间文件 , 已经最终的运行的nginx二进制文件 , 可以在objs目录看到 .
 
 ```
 ./objs
@@ -293,5 +293,5 @@ extern ngx_module_t  ngx_http_not_modified_filter_module;
 └── src/
 ```
 
-
+如果做Nginx版本升级 , 不能执行make install , 需要把nginx目标文件拷贝到安装目录中 . C语言在编译时生成的所有中间文件 , 都会放在objs/src目录下 . 
 
