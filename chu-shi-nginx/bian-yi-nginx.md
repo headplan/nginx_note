@@ -274,5 +274,5 @@ extern ngx_module_t  ngx_http_range_body_filter_module;
 extern ngx_module_t  ngx_http_not_modified_filter_module;
 ```
 
-
+最后形成`*ngx_modules[]`数组 . 
 
