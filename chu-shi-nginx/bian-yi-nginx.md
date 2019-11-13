@@ -81,5 +81,9 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 └── win-utf
 ```
 
+**configure脚本**
+
+是一个用来生成中间文件 , 执行编译前的必备动作 . 
+
 
 
