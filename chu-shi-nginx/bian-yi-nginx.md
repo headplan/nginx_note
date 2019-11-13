@@ -35,7 +35,7 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 
 **auto目录**
 
-除了标注的目录 , 其他文件及目录都是为了辅助configure脚本执行时 , 去判断nginx支持哪些模块 , 当前的操作系统有什么样的特性可以给Nginx使用 . 
+除了标注的目录 , 其他文件及目录都是为了辅助configure脚本执行时 , 去判断nginx支持哪些模块 , 当前的操作系统有什么样的特性可以给Nginx使用 .
 
 ```
 ├── auto/
@@ -66,7 +66,20 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 
 **conf目录**
 
+示例配置文件的目录
 
+```
+./conf
+├── fastcgi.conf
+├── fastcgi_params
+├── koi-utf
+├── koi-win
+├── mime.types
+├── nginx.conf
+├── scgi_params
+├── uwsgi_params
+└── win-utf
+```
 
 
 
