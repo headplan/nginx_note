@@ -87,28 +87,26 @@ tar -xzvf ./nginx-1.16.1.tar.gz
 
 **contrib目录**
 
-提供了两个perl脚本 , 和vim的配置 . 
+提供了两个perl脚本 , 和vim的配置\(可以高亮nginx配置\) .
 
 ```
 contrib
 ├── README
 ├── geo2nginx.pl
 ├── unicode2nginx
-│   ├── koi-utf
-│   ├── unicode-to-nginx.pl
-│   └── win-utf
+│   ├── koi-utf
+│   ├── unicode-to-nginx.pl
+│   └── win-utf
 └── vim
     ├── ftdetect
-    │   └── nginx.vim
+    │   └── nginx.vim
     ├── ftplugin
-    │   └── nginx.vim
+    │   └── nginx.vim
     ├── indent
-    │   └── nginx.vim
+    │   └── nginx.vim
     └── syntax
         └── nginx.vim
 ```
-
-
 
 
 
