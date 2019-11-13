@@ -1,4 +1,6 @@
-#### Nginx的组成
+# Nginx的主要组成
+
+![](/assets/zuchengbufen.png)
 
 **Nginx二进制可执行文件**
 
