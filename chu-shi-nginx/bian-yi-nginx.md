@@ -6,9 +6,15 @@
 
 [http://nginx.org/en/download.html](http://nginx.org/en/download.html)
 
-选择Stable version稳定版本 : 
+选择Stable version稳定版本 :
 
-http://nginx.org/download/nginx-1.16.1.tar.gz
+[http://nginx.org/download/nginx-1.16.1.tar.gz](http://nginx.org/download/nginx-1.16.1.tar.gz)
+
+**解压压缩包**
+
+```
+tar -xzvf ./nginx-1.16.1.tar.gz
+```
 
 
 
