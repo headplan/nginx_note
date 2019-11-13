@@ -12,7 +12,7 @@ Mainline version\(主干版本\) , 也是奇数版本 , 会增加新的功能 , 
 
 Stable version\(稳定版本\) , 偶数版本则相对稳定 .
 
-Legacy versions , 历史版本 . 
+Legacy versions , 历史版本 .
 
 #### 开源免费的Nginx与商业版Nginx Plus
 
@@ -21,4 +21,6 @@ Legacy versions , 历史版本 .
 商业版 : nginx.com
 
 阿里巴巴 : Tengine
+
+OpenResty : 免费/商业
 
