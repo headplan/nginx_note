@@ -16,5 +16,51 @@
 tar -xzvf ./nginx-1.16.1.tar.gz
 ```
 
+**目录结构**
+
+```
+./nginx-1.16.1
+├── CHANGES - 每个Nginx版本提供的特性feature和bugfix
+├── CHANGES.ru - 俄语版
+├── LICENSE - 
+├── README
+├── auto/
+├── conf/
+├── configure*
+├── contrib/
+├── html/
+├── man/
+└── src/
+```
+
+
+
+```
+├── auto/
+│   ├── cc/
+│   ├── define
+│   ├── endianness
+│   ├── feature
+│   ├── have
+│   ├── have_headers
+│   ├── headers
+│   ├── include
+│   ├── init
+│   ├── install
+│   ├── lib/
+│   ├── make
+│   ├── module
+│   ├── modules
+│   ├── nohave
+│   ├── options
+│   ├── os/
+│   ├── sources
+│   ├── stubs
+│   ├── summary
+│   ├── threads
+│   ├── types/
+│   └── unix
+```
+
 
 
