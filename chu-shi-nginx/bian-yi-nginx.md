@@ -295,5 +295,36 @@ extern ngx_module_t  ngx_http_not_modified_filter_module;
 
 如果做Nginx版本升级 , 不能执行make install , 需要把nginx目标文件拷贝到安装目录中 . C语言在编译时生成的所有中间文件 , 都会放在objs/src目录下 . 如果使用了动态模块 , 编译会生成so动态文件 , 也会放在objs文件下 .
 
-首次安装 , 使用`make install` . 
+首次安装 , 使用`make install` . 查看安装目录
+
+```
+./
+├── conf/ - 配置文件
+│   ├── fastcgi.conf
+│   ├── fastcgi.conf.default
+│   ├── fastcgi_params
+│   ├── fastcgi_params.default
+│   ├── koi-utf
+│   ├── koi-win
+│   ├── mime.types
+│   ├── mime.types.default
+│   ├── nginx.conf
+│   ├── nginx.conf.default
+│   ├── scgi_params
+│   ├── scgi_params.default
+│   ├── uwsgi_params
+│   ├── uwsgi_params.default
+│   └── win-utf
+├── html/
+│   ├── 50x.html
+│   └── index.html
+├── logs/
+│   ├── access.log
+│   ├── error.log
+│   └── nginx.pid
+└── sbin/ - nginx二进制文件
+    └── nginx*
+```
+
+
 
