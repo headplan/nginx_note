@@ -11,14 +11,21 @@
 
 #### 配置参数时间单位
 
-* ms - milliseconds
-* d - days
-* s - seconds
-* w - weeks
-* m - minutes
+* ms - milliseconds 毫秒
+* s - seconds 秒
+* m - minutes 分钟
+* h - hours 小时
+* d - days 天
+* w - weeks 周
 * M - months , 30 days
-* h - hours
 * y - years , 365 days
+
+#### 配置参数空间单位
+
+* 默认 字节\(bytes\)
+* k/K 千字节\(kilobytes\)
+* m/M 兆字节\(megabytes\)
+* g/G 千兆字节\(gigabytes\)
 
 
 
