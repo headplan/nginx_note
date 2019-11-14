@@ -15,7 +15,7 @@
     reload:重载配置文件
   -p prefix     :设置前缀路径,就是安装的路径(default:/Users/headplan/Desktop/mynginx/)
   -c filename   :设置配置文件(default:conf/nginx.conf)
-  -g directives :设置配置文件外的全局指令
+  -g directives :设置配置文件外的全局指令,所谓的指令是指在nginx.conf文件里有很多条指令,如果这些需要在命令行中覆盖其中的指令可以使用-g实现
 ```
 
 
