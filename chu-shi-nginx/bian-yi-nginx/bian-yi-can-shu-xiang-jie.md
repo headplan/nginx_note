@@ -13,16 +13,12 @@
 --pid-path=PATH                    设置nginx.pid路径
 --lock-path=PATH                   设置nginx.lock路径
 
---user=USER                        set non-privileged user for
-worker processes
---group=GROUP                      set non-privileged group for
-worker processes
+--user=USER                        创建一个虚拟用户,用于管理nginx服务的worker进程
+--group=GROUP                      创建一个虚拟用户组,用于管理nginx服务的worker进程
 
 --build=NAME                       set build name
 --builddir=DIR                     set build directory
 ```
-
-
 
 ```
 --with-select_module               enable select module
