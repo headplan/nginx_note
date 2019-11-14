@@ -9,5 +9,16 @@
 * 使用$符号使用变量 . 
 * 部分指令的参数支持正则表达式 . 
 
+#### 配置参数时间单位
+
+* ms - milliseconds
+* d - days
+* s - seconds
+* w - weeks
+* m - minutes
+* M - months , 30 days
+* h - hours
+* y - years , 365 days
+
 
 
