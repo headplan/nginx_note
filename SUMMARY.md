@@ -8,6 +8,7 @@
   * [4个主要组成](chu-shi-nginx/4ge-zhu-yao-zu-cheng.md)
   * [版本发布历史及选择](chu-shi-nginx/ban-ben-fa-bu-li-shi-ji-xuan-ze.md)
   * [编译Nginx](chu-shi-nginx/bian-yi-nginx.md)
+    * [编译参数详解](chu-shi-nginx/bian-yi-nginx/bian-yi-can-shu-xiang-jie.md)
   * [配置文件语法](chu-shi-nginx/pei-zhi-wen-jian-yu-fa.md)
     * [常用配置](chu-shi-nginx/chang-yong-pei-zhi.md)
   * [Nginx命令行](chu-shi-nginx/nginxming-ling-xing.md)
