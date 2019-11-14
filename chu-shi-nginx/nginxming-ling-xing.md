@@ -11,7 +11,7 @@
   -s signal     :给一个nginx主进程发送信号:stop(停止),quit(退出),reopen(重启),reload(重新加载配置文件)
   -p prefix     :设置前缀路径,就是安装的路径(default:/Users/headplan/Desktop/mynginx/)
   -c filename   :设置配置文件(default:conf/nginx.conf)
-  -g directives : set global directives out of configuration file
+  -g directives :设置配置文件外的全局指令
 ```
 
 
