@@ -27,5 +27,14 @@
 * m/M 兆字节\(megabytes\)
 * g/G 千兆字节\(gigabytes\)
 
+#### HTTP配置的指令块
+
+有四个指令快 , http , server , upstream , location . 
+
+* 其中http {}下的所有指令 , 都是由http模块去解析执行的 . 
+* 其中upstream表示上有服务 , 当nginx需要与tomcat , djange等企业内网的其他服务交互的时候定义 . 
+* server对应的一个域名或一组域名
+* location是一个url表达式 . 
+
 
 
