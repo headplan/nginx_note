@@ -40,7 +40,7 @@
   * Nginx的进程结构
   * Nginx的进程结构实例演示
   * 使用信号管理Nginx的父子进程
-  * reload重载配置文件详解
+  * [reload重载配置文件详解](nginxjia-gou-ji-chu/reloadzhong-zai-pei-zhi-wen-jian-xiang-jie.md)
   * [热升级的完整流程](nginxjia-gou-ji-chu/re-sheng-ji-de-wan-zheng-liu-cheng.md)
   * [优雅的关闭worker进程](nginxjia-gou-ji-chu/you-ya-de-guan-bi-worker-jin-cheng.md)
   * [网络收发与Nginx事件间的对应关系](nginxjia-gou-ji-chu/wang-luo-shou-fa-yu-nginx-shi-jian-jian-de-dui-ying-guan-xi.md)
