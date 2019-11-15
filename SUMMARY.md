@@ -56,6 +56,8 @@
   * [所有worker进程协同工作的关键:共享内存](nginxjia-gou-ji-chu/suo-you-worker-jin-cheng-xie-tong-gong-zuo-de-guan-952e3a-gong-xiang-nei-cun.md)
   * [用好共享内存的工具:Slab管理器](nginxjia-gou-ji-chu/yong-hao-gong-xiang-nei-cun-de-gong-51773a-slab-guan-li-qi.md)
   * 哈希表的max\_size与bucket\_size如何配置
+  * Nginx中最常用的容器:红黑树
+  * [使用动态模块来提升运维效率](nginxjia-gou-ji-chu/shi-yong-dong-tai-mo-kuai-lai-ti-sheng-yun-wei-xiao-lv.md)
 * [详解HTTP模块](xiang-jie-http-mo-kuai.md)
 * [反向代理与负载均衡](fan-xiang-dai-li-yu-fu-zai-jun-heng.md)
 * [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
