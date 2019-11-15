@@ -46,8 +46,8 @@
   * [网络收发与Nginx事件间的对应关系](nginxjia-gou-ji-chu/wang-luo-shou-fa-yu-nginx-shi-jian-jian-de-dui-ying-guan-xi.md)
   * [Nginx网络事件实例演示](nginxjia-gou-ji-chu/nginxwang-luo-shi-jian-shi-li-yan-shi.md)
   * [Nginx的事件驱动模型](nginxjia-gou-ji-chu/nginxde-shi-jian-qu-dong-mo-xing.md)
-  * epoll的优劣及原理
-  * Nginx的请求切换
+  * [epoll的优劣及原理](nginxjia-gou-ji-chu/epollde-you-lie-ji-yuan-li.md)
+  * [Nginx的请求切换](nginxjia-gou-ji-chu/nginxde-qing-qiu-qie-huan.md)
   * [同步&异步、阻塞&非阻塞之间的区别](nginxjia-gou-ji-chu/tong-6b6526-yi-bu-3001-zu-585e26-fei-zu-sai-zhi-jian-de-qu-bie.md)
   * [Nginx的模块究竟是什么](nginxjia-gou-ji-chu/nginxde-mo-kuai-jiu-jing-shi-shi-yao.md)
   * [Nginx模块的分类](nginxjia-gou-ji-chu/nginxmo-kuai-de-fen-lei.md)
