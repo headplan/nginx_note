@@ -37,7 +37,7 @@
   * [配置负载均衡的方案](chapter1/pei-zhi-fu-zai-jun-heng-de-fang-an.md)
 * [Nginx架构基础](nginxjia-gou-ji-chu.md)
   * Nginx的请求处理流程
-  * Nginx的进程结构
+  * [Nginx的进程结构](nginxjia-gou-ji-chu/nginxde-jin-cheng-jie-gou.md)
   * [Nginx的进程结构实例演示](nginxjia-gou-ji-chu/nginxde-jin-cheng-jie-gou-shi-li-yan-shi.md)
   * [使用信号管理Nginx的父子进程](nginxjia-gou-ji-chu/shi-yongxin-hao-guan-li-nginx-de-fu-zi-jin-cheng.md)
   * [reload重载配置文件详解](nginxjia-gou-ji-chu/reloadzhong-zai-pei-zhi-wen-jian-xiang-jie.md)
