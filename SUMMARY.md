@@ -36,6 +36,26 @@
   * [配置用例](chapter1/pei-zhi-yong-li.md)
   * [配置负载均衡的方案](chapter1/pei-zhi-fu-zai-jun-heng-de-fang-an.md)
 * [Nginx架构基础](nginxjia-gou-ji-chu.md)
+  * Nginx的请求处理流程
+  * Nginx的进程结构
+  * Nginx的进程结构实例演示
+  * 使用信号管理Nginx的父子进程
+  * reload重载配置文件详解
+  * [热升级的完整流程](nginxjia-gou-ji-chu/re-sheng-ji-de-wan-zheng-liu-cheng.md)
+  * [优雅的关闭worker进程](nginxjia-gou-ji-chu/you-ya-de-guan-bi-worker-jin-cheng.md)
+  * [网络收发与Nginx事件间的对应关系](nginxjia-gou-ji-chu/wang-luo-shou-fa-yu-nginx-shi-jian-jian-de-dui-ying-guan-xi.md)
+  * [Nginx网络事件实例演示](nginxjia-gou-ji-chu/nginxwang-luo-shi-jian-shi-li-yan-shi.md)
+  * [Nginx的事件驱动模型](nginxjia-gou-ji-chu/nginxde-shi-jian-qu-dong-mo-xing.md)
+  * epoll的优劣及原理
+  * Nginx的请求切换
+  * [同步&异步、阻塞&非阻塞之间的区别](nginxjia-gou-ji-chu/tong-6b6526-yi-bu-3001-zu-585e26-fei-zu-sai-zhi-jian-de-qu-bie.md)
+  * [Nginx的模块究竟是什么](nginxjia-gou-ji-chu/nginxde-mo-kuai-jiu-jing-shi-shi-yao.md)
+  * [Nginx模块的分类](nginxjia-gou-ji-chu/nginxmo-kuai-de-fen-lei.md)
+  * [Nginx如何通过连接池处理网络请求](nginxjia-gou-ji-chu/nginxru-he-tong-guo-lian-jie-chi-chu-li-wang-luo-qing-qiu.md)
+  * [内存池对性能的影响](nginxjia-gou-ji-chu/nei-cun-chi-dui-xing-neng-de-ying-xiang.md)
+  * [所有worker进程协同工作的关键:共享内存](nginxjia-gou-ji-chu/suo-you-worker-jin-cheng-xie-tong-gong-zuo-de-guan-952e3a-gong-xiang-nei-cun.md)
+  * [用好共享内存的工具:Slab管理器](nginxjia-gou-ji-chu/yong-hao-gong-xiang-nei-cun-de-gong-51773a-slab-guan-li-qi.md)
+  * 哈希表的max\_size与bucket\_size如何配置
 * [详解HTTP模块](xiang-jie-http-mo-kuai.md)
 * [反向代理与负载均衡](fan-xiang-dai-li-yu-fu-zai-jun-heng.md)
 * [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
