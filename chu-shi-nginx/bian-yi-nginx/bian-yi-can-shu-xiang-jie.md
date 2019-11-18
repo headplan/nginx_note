@@ -12,7 +12,7 @@
 --error-log-path=PATH              设置错误日志路径
 --pid-path=PATH                    设置nginx.pid路径
 --lock-path=PATH                   设置nginx.lock路径
-
+# 就是config文件中的第一行user www www;
 --user=USER                        创建一个虚拟用户,用于管理nginx服务的worker进程,默认用户为nobody
 --group=GROUP                      创建一个虚拟用户组,用于管理nginx服务的worker进程
 
