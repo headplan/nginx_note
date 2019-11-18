@@ -16,8 +16,8 @@
 --user=USER                        创建一个虚拟用户,用于管理nginx服务的worker进程
 --group=GROUP                      创建一个虚拟用户组,用于管理nginx服务的worker进程
 
---build=NAME                       set build name
---builddir=DIR                     set build directory
+--build=NAME                       设置编译名称
+--builddir=DIR                     指向编译目录
 ```
 
 ```
