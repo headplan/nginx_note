@@ -13,11 +13,11 @@
 --pid-path=PATH                    设置nginx.pid路径
 --lock-path=PATH                   设置nginx.lock路径
 
---user=USER                        创建一个虚拟用户,用于管理nginx服务的worker进程
+--user=USER                        创建一个虚拟用户,用于管理nginx服务的worker进程,默认用户为nobody
 --group=GROUP                      创建一个虚拟用户组,用于管理nginx服务的worker进程
 
---build=NAME                       设置编译名称
---builddir=DIR                     指向编译目录
+--build=NAME                       设置一个可选的编译器进行编译
+--builddir=DIR                     指向编译目录,默认就是objs
 ```
 
 ```
