@@ -16,11 +16,7 @@ Web , Email , TCP大致有三种流量进入 . Nginx中有三个大的状态机 
 
 所以在上图中会看到一个线程池来处理磁盘阻塞调用 .
 
-对于每一个处理完成的请求 , 会记录Access访问日志和Error错误日志 . 这里是记录在磁盘中的 , 当然也可以使用syslog协议 , 记录到远程的服务器上 . 
+对于每一个处理完成的请求 , 会记录Access访问日志和Error错误日志 . 这里是记录在磁盘中的 , 当然也可以使用syslog协议 , 记录到远程的服务器上 .
 
-更多的时候 , Nginx是作为反向代理或者负载均衡来使用的 , 这个时候可以把请求 , 通过协议把请求传输到后面的服务器 , 例如HTTP , Mail及stream\(TCP\)代理 . 也可以通过一些应用层的协议代理到相应的应用服务器 , 例如 , FastCGI , uWSGI , SCGI , memcached代理 . 
-
-扩展阅读 :
-
-[http://www.aosabook.org/en/nginx.html](http://www.aosabook.org/en/nginx.html)
+更多的时候 , Nginx是作为反向代理或者负载均衡来使用的 , 这个时候可以把请求 , 通过协议把请求传输到后面的服务器 , 例如HTTP , Mail及stream\(TCP\)代理 . 也可以通过一些应用层的协议代理到相应的应用服务器 , 例如 , FastCGI , uWSGI , SCGI , memcached代理 .
 
