@@ -10,35 +10,37 @@
 
 **使用Nginx的必备软件**
 
-`yum install -y gcc` : 编译C语言程序 , Nginx不会直接提供二进制可执行程序 . 
+`yum install -y gcc` : 编译C语言程序 , Nginx不会直接提供二进制可执行程序 .
 
-`yum install -y gcc-c++` : 编写Nginx HTTP模块时会用到 . 
+`yum install -y gcc-c++` : 编写Nginx HTTP模块时会用到 .
 
 `yum install -y pcre pcre-devel` : pcre是正则表达式库 , pcre-devel是二次开发时用的开发库\(nginx.conf配置文件里会用正则\)
 
 `yum install -y zlib zlib-devel` : 对HTTP包的内容做gzip格式的压缩\(nginx.conf配置文件里可以开启gzip on\)
 
-`yum install -y openssl openssl-devel` : 应用SSL协议传输HTTP得安装 , 要用MD5,SHA1等散列函数也得安装 . 
+`yum install -y openssl openssl-devel` : 应用SSL协议传输HTTP得安装 , 要用MD5,SHA1等散列函数也得安装 .
 
 **磁盘目录**
 
 * 源代码存放目录 - 该目录用于存放源码和第三方或我们自己写的模块源码文件
 
-* 编译阶段产生的中间文件存放目录 - 存放configure命令执行后所生成的源文件及目录,还有make命令执行后生成的目标文件和最终连接成功的二进制文件.默认情况下configure命令会将目录命名为objs,放在源代码目录下.
+* 编译阶段产生的中间文件存放目录 - 存放configure命令执行后所生成的源文件及目录 , 还有make命令执行后生成的目标文件和最终连接成功的二进制文件 . 默认情况下configure命令会将目录命名为objs,放在源代码目录下
 
-* 部署目录 - 该目录存放服务运行期间所需要的二进制文件,配置文件等,默认在\/usr\/local\/nginx
+* 部署目录 - 该目录存放服务运行期间所需要的二进制文件,配置文件等,默认在`/usr/local/nginx`
 
-* 日志文件存放目录 - 日志文件通常会比较大,研究底层架构时候,会打开debug级别的日志,非常详细,日志文件会很大.
+* 日志文件存放目录 - 日志文件通常会比较大 , 研究底层架构时候 , 会打开debug级别的日志 , 非常详细 , 日志文件会很大
 
 **Linux内核参数的优化**
 
-默认的Linux系统考虑的是最普通的通用场景.需要修改之后,使得Nginx可以拥有更高的性能.
+默认的Linux系统考虑的是最普通的通用场景 . 需要修改之后 , 使得Nginx可以拥有更高的性能 . 
 
-在内核优化时,Nginx作为静态Web内容服务器,反向代理服务器或是提供图片缩略图功能\(实时压缩图片\)的服务器时,内核参数的调整都是不同的,有针对性的.下面是最通用的使Nginx支持更多并发请求的TCP网络参数做简单说明.
+在内核优化时 , Nginx作为静态Web内容服务器 , 反向代理服务器或是提供图片缩略图功能\(实时压缩图片\)的服务器时 , 内核参数的调整都是不同的 , 有针对性的 . 下面是最通用的使Nginx支持更多并发请求的TCP网络参数做简单说明 . 
 
 修改`/etc/sysctl.conf`来更改内核参数,然后使用`sysctl -p`命令生效,最常用的配置 :
 
-fs.file-max = 999999 \#
+```
+fs.file-max = 999999
+```
 
 直接安装Nginx的二进制文件 , 会把模块直接编译进来 , 而官方模块并不是默认都开启的 , 如果想添加第三方模块 , 必须通过编译Nginx , 才能将第三方生态圈的功能添加到Nginx中 .
 
