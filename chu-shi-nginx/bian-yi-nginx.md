@@ -186,7 +186,7 @@ man ./man/nginx.8
 * `./configure` - 检测操作系统内核和已经安装的软件 , 参数的解析 , 中间目录的生成以及根据各种参数生成一些C源码文件 , Makefile文件等
 * make - 根据上一步生成的Makefile文件编译Nginx工程 , 并生成目标文件和最终的二进制文件
 * make install - 根据第一步执行时的参数将Nginx部署到指定的安装目录 , 包括目录的建立和二进制文件 , 配置文件的复制
-* 最后可以make clean和make distclean清楚前面生成的东西
+* 最后可以`make clean`和`make distclean`清楚前面生成的东西
 
 **查看编译参数**
 
