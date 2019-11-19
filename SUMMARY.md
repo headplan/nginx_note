@@ -26,7 +26,7 @@
     * [配置用例](chu-shi-nginx/pei-zhi-yong-li.md)
     * [配置负载均衡的方案](chu-shi-nginx/pei-zhi-fu-zai-jun-heng-de-fang-an.md)
   * [Nginx命令行](chu-shi-nginx/nginxming-ling-xing.md)
-    * [重载](chu-shi-nginx/nginxming-ling-xing/zhong-zai.md)
+    * [重载配置文件](chu-shi-nginx/nginxming-ling-xing/zhong-zai.md)
     * [热部署](chu-shi-nginx/nginxming-ling-xing/re-bu-shu.md)
     * [日志切割](chu-shi-nginx/nginxming-ling-xing/ri-zhi-qie-ge.md)
   * [搭建静态资源Web服务器](chu-shi-nginx/da-jian-jing-tai-zi-yuan-web-fu-wu-qi.md)
