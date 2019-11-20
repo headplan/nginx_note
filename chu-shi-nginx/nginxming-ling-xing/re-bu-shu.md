@@ -12,5 +12,15 @@ ps -ef | grep nginx
 cp nginx nginx.old
 ```
 
+然后编译新版本的nginx二进制文件 , 并将文件复制替换
+
+```
+cp nginx /usr/local/nginx/sbin/ -f
+```
+
+> 强制复制
+
+
+
 
 
