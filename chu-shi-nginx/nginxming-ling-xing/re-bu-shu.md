@@ -18,9 +18,7 @@ cp nginx nginx.old
 cp nginx /usr/local/nginx/sbin/ -f
 ```
 
-> 强制复制
-
-
+> 强制复制 -f 参数
 
 
 
