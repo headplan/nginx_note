@@ -58,6 +58,7 @@
   * [使用动态模块来提升运维效率](nginxjia-gou-ji-chu/shi-yong-dong-tai-mo-kuai-lai-ti-sheng-yun-wei-xiao-lv.md)
 * [详解HTTP模块](xiang-jie-http-mo-kuai.md)
 * [反向代理与负载均衡](fan-xiang-dai-li-yu-fu-zai-jun-heng.md)
+  * [反向代理与负载均衡原理](fan-xiang-dai-li-yu-fu-zai-jun-heng/fan-xiang-dai-li-yu-fu-zai-jun-heng-yuan-li.md)
 * [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
 * [Nginx与OpenResty](nginxyu-openresty.md)
 
