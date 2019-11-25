@@ -17,5 +17,7 @@ Nginx负责与上游服务交互的模块统称为upstream模块 , 不管是stre
   * backup : 指定当前server为备份服务 , 仅当非备份server不可用时 , 请求才会转发到该server
   * down : 标识某台服务已经下线 , 不在服务
 
+#### 加权Round-Robin负载均衡算法
+
 
 
