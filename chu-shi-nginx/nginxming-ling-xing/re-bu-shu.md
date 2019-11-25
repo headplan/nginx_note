@@ -38,3 +38,5 @@ kill -WINCH 13195
 
 ![](/assets/fasongxinhao2.png)
 
+现在可以看到 , 老的master进程已经没有worker进程了 , 说明现在所有请求都已经切换到新的nginx中了 . 如果 , 现在发现一些问题 , 需要把新版本回退 , 可以给老版本的master进程发送reload命令 , 从新吧worker进程拉起来 , 再把新版本关掉 . 
+
