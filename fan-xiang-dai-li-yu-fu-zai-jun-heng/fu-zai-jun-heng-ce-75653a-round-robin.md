@@ -23,3 +23,15 @@ Nginx负责与上游服务交互的模块统称为upstream模块 , 不管是stre
 
 这里**Round-Robin**的意思就是一次轮询 , 挨个进行的方式 . **加权** , 就是通过一个权重 , 来标识某台服务不同于其他服务 , 权重更大 , 将更多的请求发送给这台服务 . 
 
+**Round-Robin提供了四个**`parameters`
+
+weight
+
+max\_conns
+
+max\_fails
+
+fail\_timeout
+
+
+

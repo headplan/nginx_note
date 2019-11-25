@@ -63,6 +63,12 @@
   * [负载均衡哈希算法:ip\_hash与hash模块](fan-xiang-dai-li-yu-fu-zai-jun-heng/fu-zai-jun-heng-ha-xi-suan-6cd53a-ip-hash-yu-hash-mo-kuai.md)
   * [一致性哈希算法:hash模块](fan-xiang-dai-li-yu-fu-zai-jun-heng/yi-zhi-xing-ha-xi-suan-6cd53a-hash-mo-kuai.md)
   * [最少连接算法以及如何跨worker进程生效](fan-xiang-dai-li-yu-fu-zai-jun-heng/zui-shao-lian-jie-suan-fa-yi-ji-ru-he-kua-worker-jin-cheng-sheng-xiao.md)
+  * [http upstream模块提供的变量](fan-xiang-dai-li-yu-fu-zai-jun-heng/http-upstreammo-kuai-ti-gong-de-bian-liang.md)
+  * [http反向代理proxy处理请求的流程](fan-xiang-dai-li-yu-fu-zai-jun-heng/httpfan-xiang-dai-li-proxy-chu-li-qing-qiu-de-liu-cheng.md)
+  * [proxy模块中的proxy\_pass指令](fan-xiang-dai-li-yu-fu-zai-jun-heng/proxymo-kuai-zhong-de-proxy-pass-zhi-ling.md)
+  * [根据指令修改发往上游的请求](fan-xiang-dai-li-yu-fu-zai-jun-heng/gen-ju-zhi-ling-xiu-gai-fa-wang-shang-you-de-qing-qiu.md)
+  * [接收用户请求包体的方式](fan-xiang-dai-li-yu-fu-zai-jun-heng/jie-shou-yong-hu-qing-qiu-bao-ti-de-fang-shi.md)
+  * [与上游服务建立连接](fan-xiang-dai-li-yu-fu-zai-jun-heng/yu-shang-you-fu-wu-jian-li-lian-jie.md)
 * [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
 * [Nginx与OpenResty](nginxyu-openresty.md)
 
