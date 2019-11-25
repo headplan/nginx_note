@@ -59,6 +59,10 @@
 * [详解HTTP模块](xiang-jie-http-mo-kuai.md)
 * [反向代理与负载均衡](fan-xiang-dai-li-yu-fu-zai-jun-heng.md)
   * [反向代理与负载均衡原理](fan-xiang-dai-li-yu-fu-zai-jun-heng/fan-xiang-dai-li-yu-fu-zai-jun-heng-yuan-li.md)
+  * [负载均衡策略:round-robin](fan-xiang-dai-li-yu-fu-zai-jun-heng/fu-zai-jun-heng-ce-75653a-round-robin.md)
+  * [负载均衡哈希算法:ip\_hash与hash模块](fan-xiang-dai-li-yu-fu-zai-jun-heng/fu-zai-jun-heng-ha-xi-suan-6cd53a-ip-hash-yu-hash-mo-kuai.md)
+  * [一致性哈希算法:hash模块](fan-xiang-dai-li-yu-fu-zai-jun-heng/yi-zhi-xing-ha-xi-suan-6cd53a-hash-mo-kuai.md)
+  * [最少连接算法以及如何跨worker进程生效](fan-xiang-dai-li-yu-fu-zai-jun-heng/zui-shao-lian-jie-suan-fa-yi-ji-ru-he-kua-worker-jin-cheng-sheng-xiao.md)
 * [Nginx系统层性能优化](nginxxi-tong-ceng-xing-neng-you-hua.md)
 * [Nginx与OpenResty](nginxyu-openresty.md)
 
