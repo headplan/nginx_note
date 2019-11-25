@@ -42,11 +42,11 @@ kill -WINCH masterPid
 
 现在可以看到 , 老的master进程已经没有worker进程了 , 说明现在所有请求都已经切换到新的nginx中了 . 如果 , 现在发现一些问题 , 需要把新版本回退 , 可以给老版本的master进程发送reload命令 , 从新吧worker进程拉起来 , 再把新版本关掉 .
 
-> 在执行完`kill -USR2 masterPid`后 , 可以用lsof -p masterPid查看进程打开的句柄 , 也包括监听的端口 . 用netstat命令也可以 , 或者直接在/proc目录中找进程的相关信息也可以 .
+> 在执行完`kill -USR2 masterPid`后 , 可以用`lsof -p masterPid`查看进程打开的句柄 , 也包括监听的端口 . 用netstat命令也可以 , 或者直接在/proc目录中找进程的相关信息也可以 .
 >
-> kill -QUIT masterPid 可以杀掉老的master .
+> `kill -QUIT masterPid` 可以杀掉老的master .
 >
-> 上面提到的新版本回退 , 使用kill -HUP来执行reload , 把老的worker进程拉起来 .
+> 上面提到的新版本回退 , 使用`kill -HUP masterPid`来执行reload , 把老的worker进程拉起来 .
 
 
 
