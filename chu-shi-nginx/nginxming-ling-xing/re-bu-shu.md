@@ -48,5 +48,5 @@ kill -WINCH masterPid
 >
 > 上面提到的新版本回退 , 使用`kill -HUP masterPid`来执行reload , 把老的worker进程拉起来 .
 
-
+更多详细流程查看 - **热升级的完整流程** . 
 
