@@ -23,7 +23,7 @@ cp nginx /usr/local/nginx/sbin/ -f
 给nginx的master进程发送信号
 
 ```
-kill -USR2 13195
+kill -USR2 masterPid
 ```
 
 现在会新启动一个nginx的master进程 , 使用前面复制过来的nginx二进制文件 . 老的worker还在运行 , 新的master会生成新的worker , 平滑的把请求过渡到新的nginx二进制文件启动的nginx进程中 .
@@ -33,10 +33,18 @@ kill -USR2 13195
 现在 , 新老进程都在运行 , 但是老的woker进程已经不再监听80/443这样的web端口了 . 新的请求 , 新的连接只会进入新的进程中 . 现在要发送一个信号给老的进程 , 让其优雅的关闭其worker进程 .
 
 ```
-kill -WINCH 13195
+kill -WINCH masterPid
 ```
 
 ![](/assets/fasongxinhao2.png)
 
-现在可以看到 , 老的master进程已经没有worker进程了 , 说明现在所有请求都已经切换到新的nginx中了 . 如果 , 现在发现一些问题 , 需要把新版本回退 , 可以给老版本的master进程发送reload命令 , 从新吧worker进程拉起来 , 再把新版本关掉 . 
+现在可以看到 , 老的master进程已经没有worker进程了 , 说明现在所有请求都已经切换到新的nginx中了 . 如果 , 现在发现一些问题 , 需要把新版本回退 , 可以给老版本的master进程发送reload命令 , 从新吧worker进程拉起来 , 再把新版本关掉 .
+
+> 在执行完`kill -USR2 masterPid`后 , 可以用lsof -p masterPid查看进程打开的句柄 , 也包括监听的端口 . 用netstat命令也可以 , 或者直接在/proc目录中找进程的相关信息也可以 . 
+>
+> kill -QUIT masterPid 可以杀掉老的master . 
+>
+> 上面提到的新版本回退 , 使用kill -USR1来执行reload , 把老的worker进程拉起来 .
+
+
 
