@@ -90,7 +90,13 @@ Nginx支持多种协议的反向代理 . 反向代理主要分为两类 , 4层�
 
 4层的反向代理 , Nginx的stream模块支持 . 进来是UDP流量 , Nginx转发到上游的还是UDP流量 , TCP流量也是一样的 . 这两种协议的业务特性相对较少 , Nginx并不能做很多工作 , 所以相对比较简单 .
 
-应用层 , 也就是7层的反向代理的时候就不太一样了 , HTTP协议中含有大量的业务相关的信息 , 当客户端发来http请求以后 , 可以根据http的header , method等等参数的信息将其转为不同的协议 . 
+应用层 , 也就是7层的反向代理的时候就不太一样了 , HTTP协议中含有大量的业务相关的信息 , 当客户端发来http请求以后 , 可以根据http的header , method等等参数的信息将其转为不同的协议 .
 
 ![](/assets/fanxiangdaili.png)
+
+---
+
+#### 反向代理预缓存
+
+![](/assets/fandaiyuhuancun.png)
 
