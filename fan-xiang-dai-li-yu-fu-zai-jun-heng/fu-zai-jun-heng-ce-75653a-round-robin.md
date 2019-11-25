@@ -19,5 +19,9 @@ Nginx负责与上游服务交互的模块统称为upstream模块 , 不管是stre
 
 #### 加权Round-Robin负载均衡算法
 
+功能 : 在加权轮询的方式访问server指令指定的上游服务 . 
+
+继承在Nginx的upstream框架中 . 
+
 
 
