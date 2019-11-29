@@ -47,6 +47,8 @@ kill -WINCH masterPid
 > `kill -QUIT masterPid` 可以杀掉老的master .
 >
 > 上面提到的新版本回退 , 使用`kill -HUP masterPid`来执行reload , 把老的worker进程拉起来 .
+>
+> 再QUIT掉新的master进程 .
 
-更多详细流程查看 - **热升级的完整流程** . 
+更多详细流程查看 - **热升级的完整流程** .
 
