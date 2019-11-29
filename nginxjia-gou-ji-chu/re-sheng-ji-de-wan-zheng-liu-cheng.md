@@ -6,6 +6,8 @@ Nginx热升级 , 保证Nginx在不停止服务的情况下 , 更换binary文件 
 
 #### 热升级流程
 
+![](/assets/reshengjiliucheng.png)
+
 **将旧Nginx文件换成新Nginx文件\(注意备份\)**
 
 * 这里指binary文件 , 新编译的Nginx文件所指定的配置选项 , 比如目录 , Log的目录等等必须保持和旧的一致 , 替换注意备份 , 还需注意的是 , 覆盖文件时 , 需要强制 , `cp -f`
@@ -72,7 +74,5 @@ kill -WINCH masterPid
 
 使用`kill -HUP masterPid`来向老的master发送信号 , 把老的worker进程拉起来 .
 
-再向新的进程发送信号 , `kill -QUIT masterPid`QUIT掉新的master进程 . 
-
-
+再向新的进程发送信号 , `kill -QUIT masterPid`QUIT掉新的master进程 .
 
