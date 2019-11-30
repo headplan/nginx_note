@@ -6,15 +6,23 @@
 
 ![](/assets/jinchengid.png)
 
-通过ps命令 , 可以看到nginx:master进程是用root用户起的 , 进程的id是3544 , 两个worker进程都是通过3544起来的 . 两个worker进程的id是18348 , 18349 . 
+通过ps命令 , 可以看到nginx:master进程是用root用户起的 , 进程的id是3544 , 两个worker进程都是通过3544起来的 . 两个worker进程的id是18348 , 18349 .
 
-现在执行 : 
+现在执行 :
 
 ```
 nginx -s reload
 ```
 
-优雅的退出worker进程 , 再使用新的配置项启动新的子进程 . 这里虽然没有改变配置 , 但是可以看到 , 老的子进程会退出 , 然后生成新的子进程 . 
+优雅的退出worker进程 , 再使用新的配置项启动新的子进程 . 这里虽然没有改变配置 , 但是可以看到 , 老的子进程会退出 , 然后生成新的子进程 .
 
 ![](/assets/xindezijincheng.png)
+
+可以看到之前的子进程都不在了 , 由3544master进程新启动了两个子进程30552 , 30553 . 之前说过 , reload和HUP信号的作用是相同的 . 现在向nginx的master进程3544发送HUP信号 : 
+
+```
+kill -SIGHUP 3544
+```
+
+![](/assets/fasonghupxinhao.png)
 
