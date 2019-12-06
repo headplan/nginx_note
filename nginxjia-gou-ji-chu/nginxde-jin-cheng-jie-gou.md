@@ -40,14 +40,14 @@ worker_processes     4;
 worker_cpu_affinity 01 10 01 10;
 ```
 
-4个cpu , 开启4个进程 : 
+4个cpu , 开启4个进程 :
 
 ```
 worker_processes     4;
 worker_cpu_affinity 0001 0010 0100 1000;
 ```
 
-8核cpu , 开启8个进程 : 
+8核cpu , 开启8个进程 :
 
 ```
 worker_processes     8;
