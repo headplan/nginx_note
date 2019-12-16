@@ -24,3 +24,9 @@
 
 ![](/assets/butingjizaoruxinpeizhi.png)
 
+如图所示 , Master进程上有4个worker子进程 , 当更新了nginx.conf配置文件后 , 向Master发送SIGHUP信号或者执行nginx -s reload命令 . Master进程会使用新的配置文件启动新的4个worker子进程 . 此时新老worker子进程是并存的 , 也就是图上的黄色和绿色的worker子进程 . 老配置的worker进程会在完成已存在连接时优雅的退出 , 哪怕是keepalive请求 . 
+
+异常情况下 , worker进程可能会请求错误 , 客户端长时间没有处理 , 就会导致这个请求长时间的占用在这个worker进程上面 ,  这个worker进程就会一直存在 , 不过新的连接已经跑在新的黄色的worker子进程中 , 影响并不会很大 . 唯一会导致这个worker子进程一直存在 , 但也只影响已经存在的连接 , 不会影响新的连接 . 
+
+nginx比较新的版本中 , 已经提供了配置 , worker\_shutdown\_timeout . 这个配置在master进程启动黄色worker子进程的时候 , 会开启一个定时器 , 设置多少秒后关闭绿色的连接 , 时间到了之后 , 会立刻强制的退出老的worker子进程 . 
+
