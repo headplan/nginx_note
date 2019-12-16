@@ -24,18 +24,18 @@ master进程还会通过接收一些信号来管理worker进程 :
 
 #### Worker进程
 
-worker进程也可以接收信号 : 
+worker进程也可以接收信号 :
 
 * TERM , INT
 * QUIT
 * USR1
 * WINCH
 
-通常不直接对worker进程发送信号 , 因为我们希望通过master进程管理去管理worker进程 , 虽然发送这些信号一样可行 , 但往往我们还是对master进程进行管理 , master进程收到信号以后 , 会去再把信号发送给worker进程 . 
+通常不直接对worker进程发送信号 , 因为我们希望通过master进程管理去管理worker进程 , 虽然发送这些信号一样可行 , 但往往我们还是对master进程进行管理 , master进程收到信号以后 , 会去再把信号发送给worker进程 .
 
 #### Nginx命令行
 
-当启动了nginx之后 , nginx会把PID记录到一个文件中 , 默认记录到nginx安装目录的logs文件夹下nginx.pid文件中 , 也就是master进程的PID . 我们在执行nginx命令时 , nginx的工具命令行首先读取PID文件获得master进程的PID , 然后像前面的操作一样 , 去向这个PID发送信号 , 对应的命令是 : 
+当启动了nginx之后 , nginx会把PID记录到一个文件中 , 默认记录到nginx安装目录的logs文件夹下nginx.pid文件中 , 也就是master进程的PID . 我们在执行nginx命令时 , nginx的工具命令行首先读取PID文件获得master进程的PID , 然后像前面的操作一样 , 去向这个PID发送信号 , 对应的命令是 :
 
 * reload : HUP
 * reopen : USR1
