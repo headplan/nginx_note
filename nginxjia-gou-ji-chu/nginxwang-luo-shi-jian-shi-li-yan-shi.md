@@ -18,5 +18,15 @@
 Transmission Control Protocol, Src Port: 56348, Dst Port: 8080, Seq: 0, Len: 0
 ```
 
+TCP层主要做进程与进程之间通讯 . 再看IP层 : 
 
+```
+Internet Protocol Version 4, Src: 192.168.0.101, Dst: 116.101.99.33
+```
+
+主要解决机器和机器之间 , 怎么样互相找到的问题 . 
+
+三次握手 , 就是本机先向Nginx发送一个SYN包 , 相对应的Nginx也会向本机发送一个SYN和ACK包 , 这时Nginx是没有感知到的 , 连接还是属于一个半打开的状态 , 直到本机再次发送ACK到Nginx服务器上时 , Nginx所在的操作系统 , 才会去通知Nginx收到了一个读事件 , 这个读事件对应的建立了一个新连接 , 所以Nginx此时 , 应该调用Accept方法 , 去建立一个新的连接 . 
+
+以上 , 通过Wireshark抓包 , 演示了正常的三次握手 , 是怎样引发一个读事件 , 来使得Nginx去处理这样一个读事件 , 建立新的连接的 . 
 
