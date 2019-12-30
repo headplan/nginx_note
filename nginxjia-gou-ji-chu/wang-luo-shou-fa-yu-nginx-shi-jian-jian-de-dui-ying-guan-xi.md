@@ -6,5 +6,9 @@ Nginx是一个事件驱动的框架 . 所谓事件 , 主要指的是网络事件
 
 ![](/assets/wangluotuopu.png)
 
-主机A\(例如:笔记本电脑\)发送Get请求到主机B\(Nginx服务器\)
+主机A\(例如:笔记本电脑\)发送一个HTTP的GET请求到主机B\(Nginx服务器\) , 过程中经历了哪些网络事件呢 ? 
+
+![](/assets/shujuliu.png)
+
+
 
