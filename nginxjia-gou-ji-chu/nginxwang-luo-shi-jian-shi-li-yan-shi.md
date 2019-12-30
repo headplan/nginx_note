@@ -6,7 +6,5 @@
 
 ![](/assets/wireshark.png)
 
-
-
-
+对Nginx服务器的IP以及8080端口进行抓包 . 
 
