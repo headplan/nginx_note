@@ -10,9 +10,13 @@
 
 ![](/assets/zhiling.png)
 
-开启或是关闭gzip的功能 . 
+开启或是关闭gzip的功能 .
 
-文档最下方是Embedded Variables . 就是Nginx的变量 . 
+文档最下方是Embedded Variables . 就是Nginx的变量 .
 
 ![](/assets/bianliang.png)
+
+#### 通过编译查看源码的方式查看配置项
+
+
 
